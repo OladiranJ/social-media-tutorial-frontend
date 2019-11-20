@@ -19,7 +19,7 @@ import CircularProgress     from '@material-ui/core/CircularProgress'
 // Styles
 
 const styles = {
-
+    
     form: {
         textAlign: 'center'
     },
@@ -66,7 +66,7 @@ class login extends Component {
         email:      '',
         password:   '',
         loading:    false,
-        errors: {}
+        errors:     {}
 
     }
 
@@ -77,12 +77,13 @@ class login extends Component {
             loading: true
         })
         const userData = {
-            email: this.state.email,
-            password: this.state.password
+            email:      this.state.email,
+            password:   this.state.password
         }
         axios.post('/login', userData)
             .then(res => {
                 console.log(res.data)
+                localStorage.setItem('FBIdToken', `Bearer ${res.data.token}`)
                 this.setState({
                     loading: false
                 })
