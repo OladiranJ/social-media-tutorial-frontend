@@ -72,9 +72,11 @@ class login extends Component {
     }
 
     componentWillReceiveProps(nextProps){
+
         if(nextProps.UI.errors){
             this.setState({ errors: nextProps.UI.errors })
         }
+
     }
 
     handleSubmit = (event) => {
@@ -167,19 +169,25 @@ class login extends Component {
 }
 
 login.propTypes = {
+
     classes:    PropTypes.object.isRequired,
     loginUser:  PropTypes.func.isRequired,
     user:       PropTypes.object.isRequired,
     UI:         PropTypes.object.isRequired
+
 }
 
 const mapStateToProps = (state) => ({
+
     user:   state.user,
     UI:     state.UI
+
 })
 
 const mapActionsToProps = {
+
     loginUser
+    
 }
 
 
