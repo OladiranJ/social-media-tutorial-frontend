@@ -6,7 +6,6 @@ import withStyles           from '@material-ui/core/styles/withStyles'
 import PropTypes            from 'prop-types'
 import Grid                 from '@material-ui/core/Grid'
 import AppIcon              from '../images/monkey-1.png'
-import axios                from 'axios'
 import { Typography }       from '@material-ui/core'
 import TextField            from '@material-ui/core/TextField'
 import Button               from '@material-ui/core/Button'
@@ -205,7 +204,7 @@ signup.propTypes = {
     user:       PropTypes.object.isRequired,
     UI:         PropTypes.object.isRequired,
     signupUser: PropTypes.func.isRequired
-    
+
 }
 
 const mapStateToProps = (state) => ({
