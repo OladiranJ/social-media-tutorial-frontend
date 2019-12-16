@@ -170,7 +170,7 @@ class Profile extends Component {
                     </div>
                     <Tooltip title='Logout' placement='top'>
                             <IconButton onClick={this.handleLogout}>
-                                <KeyboardReturn color='primary'/>
+                                <KeyboardReturn color='secondary'/>
                             </IconButton>
                     </Tooltip>
                     <EditDetails/>
