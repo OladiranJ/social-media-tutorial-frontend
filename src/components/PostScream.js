@@ -12,7 +12,6 @@ import DialogTitle                      from '@material-ui/core/DialogTitle'
 import CircularProgress                 from '@material-ui/core/CircularProgress'
 import AddIcon                          from '@material-ui/icons/Add'
 import CloseIcon                        from '@material-ui/icons/Close'
-import EditIcon                         from '@material-ui/icons/Edit'
 import { connect }                      from 'react-redux'
 import { postScream }                   from '../redux/actions/dataActions'
 
