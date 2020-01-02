@@ -3,7 +3,7 @@
 import React, { Component }                       from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { ThemeProvider as MuiThemeProvider }      from '@material-ui/core/styles'
-import Navbar                                     from './components/Navbar.js';
+import Navbar                                     from './components/layout/Navbar.js';
 import AuthRoute                                  from './util/AuthRoute'
 import home                                       from './pages/home.js'
 import login                                      from './pages/login.js'
