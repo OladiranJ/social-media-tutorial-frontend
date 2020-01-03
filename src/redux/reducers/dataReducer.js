@@ -7,7 +7,8 @@ import {
     LOADING_DATA,
     DELETE_SCREAM,
     POST_SCREAM,
-    SET_SCREAM
+    SET_SCREAM,
+    SUBMIT_COMMENT
 }       from '../types'
 
 // ---------------------------------------------------------------------------------------------------------
@@ -64,6 +65,14 @@ export default function(state = initialState, action){
                     action.payload,
                     ...state.screams
                 ]
+            }
+        case SUBMIT_COMMENT:
+            return {
+                ...state,
+                scream: {
+                    ...state.scream,
+                    comments: [action.payload, ...state.scream.comments]
+                }
             }
         default:
             return state
