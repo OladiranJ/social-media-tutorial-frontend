@@ -27,6 +27,7 @@ import './App.css'
 
 const theme = createMuiTheme(themeObject)
 
+axios.defaults.baseURL = "https://us-central1-social-media-tutorial-backend.cloudfunctions.net/api"
 
 const token = localStorage.FBIdToken
 if (token) {
